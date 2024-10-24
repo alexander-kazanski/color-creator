@@ -1,0 +1,117 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter" sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.hide {
+    display: none;
+}
+
+#nav {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 5.625em;
+    max-width: 34.375em;
+    background: #fff;
+    padding: 1.4375em .875em;
+    box-shadow: .25em .6875em .625em rgba(0, 0, 0, .1);
+    z-index: 1;
+}
+
+#color {
+    min-width: 3.8125em;
+    min-height: 2.625em;
+    margin-right: .75em;
+}
+
+select {
+    min-width: 19.5em;
+    min-height: 2.625em;
+    margin-right: .8125em;
+    padding: .5625em 2.3125em .5625em .8123em;
+    font-size: 1rem;
+    border-radius: .375em;
+    border: .0625em solid #D1D5DB;
+    appearance: none;
+    background-image: url('./images/arrow-down.svg');
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 50%;
+    background-size: contain;
+}
+
+option {
+    padding: 8px 12px;
+}
+
+
+button {
+    font-size: .75rem;
+    min-width: 10.35em;
+    min-height: 3.5em;
+    border-radius: .25em;
+    border: .0625em solid #D1D5DB;
+    font-weight: 600;
+    background: #fff;
+    color: #374151;
+    padding: 1.08em .916em;
+}
+
+#body {
+    margin: auto;
+    max-width: 34.375em;
+    display: flex;
+    
+}
+.pallet-wrapper {
+    color: #2B283A;
+    text-align: center;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    height: auto;
+}
+
+.pallet {
+    min-width: calc(34.375em / 5);
+    width: 6.875em;
+    height: 34.375em;
+    
+}
+
+.pallet-wrapper p {
+    font-size: .75rem;
+    box-shadow: .25em .6875em .625em rgba(0, 0, 0, .1);
+    text-align:center;
+    padding: 11px 28px;
+    margin: 0;
+}
+
+.pallet-wrapper:nth-child(1) .pallet {
+    background: #F55A5A;
+}
+
+.pallet-wrapper:nth-child(2) .pallet {
+    background: #2B283A;
+}
+
+.pallet-wrapper:nth-child(3) .pallet {
+    background: #FBF3AB;
+}
+
+.pallet-wrapper:nth-child(4) .pallet {
+    background: #AAD1B6;
+}
+
+.pallet-wrapper:nth-child(5) .pallet {
+    background: #A626D3;
+}
